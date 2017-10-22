@@ -19,7 +19,7 @@ public:
 	void begin();
 private:
 	int _pin;
-	int RL_VALUE = 5;     //define the load resistance on the board, in kilo ohms
+	int RL_VALUE = 1;     //define the load resistance on the board, in kilo ohms
 	int RO_CLEAN_AIR_FACTOR = 9.83;  
 	int CALIBARAION_SAMPLE_TIMES = 5; 
 	int CALIBRATION_SAMPLE_INTERVAL = 50;
