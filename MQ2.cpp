@@ -68,7 +68,7 @@ float MQ2::MQCalibration() {
   float val=0;
  
   for (int i=0;i<CALIBARAION_SAMPLE_TIMES;i++) {            //take multiple samples
-    val += MQResistanceCalculation(analogRead(_pin));
+    val += MQResistanceCalculation(analogRead(_pin) + 1.0);
     delay(CALIBRATION_SAMPLE_INTERVAL);
   }
   val = val/CALIBARAION_SAMPLE_TIMES;                   //calculate the average value
